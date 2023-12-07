@@ -5,6 +5,7 @@ import FormControlLabel from '@mui/material/FormControlLabel';
 import { ReactComponent as CogwheelIcon } from './cogwheel-icon.svg'; // Import a cogwheel icon
 
 import './carList.css';
+ http = axios.create({ baseURL: process.env.REACT_APP_API_URL });
 
 function CarList() {
     const [cars, setCars] = useState([]);
