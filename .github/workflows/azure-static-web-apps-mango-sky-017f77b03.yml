@@ -36,7 +36,7 @@ jobs:
           ###### End of Repository/Build Configurations ######
       env:
         CI: false
-        REACT_APP_API_URL: https://mango-sky-017f77b03.4.azurestaticapps.net
+        REACT_APP_API_URL: "https://mango-sky-017f77b03.4.azurestaticapps.net"
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
